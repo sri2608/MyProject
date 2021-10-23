@@ -1,0 +1,125 @@
+<html>
+  <head>
+    <title>Login Page</title>
+    <style>
+    .head-logo{
+      background-color: chocolate;
+      height: 60px;
+    }
+    .head-logo img{
+      width: 60px;
+      height: 60px;
+      margin-left:10px;
+    }
+    .links{
+      float:right
+    }
+    .head-logo a{
+      float: left;
+      color:white;
+      text-align: center;
+      padding: 12px;
+      text-decoration: none;
+      font-size: 15px;
+      line-height: 35px;
+    }
+    .head-logo a:active {
+     color:blueviolet;
+    } 
+    .head-logo a:visited {
+      color:white;
+    } 
+    .head-logo a:hover{
+      color:black;
+    } 
+    .head-logo a:focus {
+      color:purple;
+      outline-color:yellow;
+    }
+    #Login{
+      height: 300px;
+      background-color:bisque;
+      position: absolute;
+      top:0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+      text-align:center;
+      width: 40%;
+      border: 2px solid;
+    }
+    #Header{
+      background-color: chocolate;
+      margin: auto;
+      position: absolute;
+      text-align:center ;
+      top: 0;
+      width: 100%;
+      height: 50px;
+    }
+    #fields{
+      height: 100px;
+      background-color:bisque;
+      position: absolute;
+      top:0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+      text-align:center;
+      width: 100%;
+    }
+
+    .footer{
+      background-color: chocolate;
+      padding: 10px;
+      text-align: center;
+      position:absolute;
+      bottom: 2px;
+      width: 97.5%;
+      height: auto;
+    }
+    
+    </style>
+    </head>
+    <body>
+      <div class="head-logo">
+        <img src="Logo.jpg" alt="logo" width=60px height=60px>
+        <div class="links">
+          <a href="SRA1.html" target="_self">Home</a>
+          <a href="contact.html" target="_blank">Contact</a>
+          <a href="contact.html" target="_blank">About</a>
+          <a href="contact.html" target="_self">Test</a>
+          <a href="Login.html" target="_self"><sub>Login</sub></a>
+          <a href="signup.html" target="_self"><sub>Signup</sub></a>
+        </div>
+      </div>
+      <div id="Login">
+        <div id="Header"><b style="line-height: 50px;font-size:120%;">Login</b></div>
+        <div id="fields">
+          <form id="myform">
+            <label for="fname">Username :</label>
+            <input type="Username" id="fname" name="fname" maxlength="7">
+            <br>
+            <br>
+            <label for="lname">Password :</label>
+            <input type="password" id="lname" name="lname">
+          </form>
+          <br>
+          <input type="button" style="margin-right: 20px;"  value ="Login" onClick="signup.html">
+          <input type="reset" value="Reset" onClick = "fun()">
+        </div>
+      </div>
+      <div class="footer">
+        <p><b>©CopyRight</b></p>
+      </div>
+    </body>
+    
+  </head>
+</html>
+<script>
+function fun(){
+  document.getElementById("myform").reset();
+  }
+</script>

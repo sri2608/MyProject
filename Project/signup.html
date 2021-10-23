@@ -1,0 +1,106 @@
+<html lang="en">
+    <head>
+        <title>Sign Up Page</title>
+        <style>
+            .head-logo{
+                background-color: chocolate;
+            }
+            .head-logo img{
+                width: 60px;
+                height: 60px;
+                margin-left:10px;
+            }
+            .links{
+                float:right;
+                margin: auto;
+            }
+            .head-logo a{
+                float: left;
+                color:white;
+                text-align: center;
+                padding: 12px;
+                text-decoration: none;
+                font-size: 15px;
+                line-height: 35px;
+            }
+            .head-logo a:active {
+                color:blueviolet;
+            } 
+            .head-logo a:visited {
+                color:white;
+            } 
+            .head-logo a:hover{
+                color:black;
+            } 
+            .head-logo a:focus {
+                color:purple;
+                outline: none;
+            }
+            #signupimage{
+                background-color: bisque;
+            }
+            #signup{
+                height:83.5%;
+                position: absolute;
+                top:90px;
+                bottom: 0;
+                right: 8px;
+                width: 45%;
+                border: 3px dotted;
+            }
+            #signdiv{
+                background-color: chocolate;
+                margin: auto;
+                position: absolute;
+                text-align:center ;
+                top: 0;
+                width: 100%;
+                height: 50px;
+            }
+            #names{
+                height: 300px;
+                position: absolute;
+                top:70px;
+                bottom: 0;
+                left: 30px;
+                width: 100%;
+                line-height: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="head-logo">
+            <img src="Logo.jpg" alt="logo" width=60px height=60px>
+            <div class="links">
+              <a href="SRA1.html" target="_self">Home</a>
+              <a href="contact.html" target="_self">Contact</a>
+              <a href="contact.html" target="_self">About</a>
+              <a href="contact.html" target="_self">Test</a>
+              <a href="Login.html" target="_self"><sub>Login</sub></a>
+              <a href="signup.html" target="_self"><sub>Signup</sub></a>
+            </div>
+          </div>
+          <div id="signupimage">
+              <br>
+              <img src="Choco.jpg" style="width: 50%;height:87%;">
+              <div id="signup">
+                  <div id="signdiv"><b style="line-height: 50px;font-size:120%;">Sign Up</b></div>
+                  <div id=names>
+                      <form>
+                        <label for="fname">First Name<span style="color:#ff0000">*</span> :</label>
+                        <input type="First Name" id="fname" name="fname" maxlength="7">
+                        <br>
+                        <label for="fname">Last Name<span style="color:#ff0000">*</span> :</label>
+                        <input type="First Name" id="fname" name="fname" maxlength="7">
+                        <br>
+                        <label for="age1">Gender :</label>
+                        <input type="radio" id="age1" name="age" value="30">
+                        <label for="age1">Male</label>
+                        <input type="radio" id="age1" name="age" value="30">
+                        <label for="age1">Female</label><br>
+                      </form>
+                  </div>
+              </div>
+          </div>
+    </body>
+</html>
